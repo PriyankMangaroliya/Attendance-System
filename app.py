@@ -14,5 +14,10 @@ def home():
 def login():
     return render_template("auth-login.html")
 
+@app.route("/register")
+def register():
+    return render_template("auth-register.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
